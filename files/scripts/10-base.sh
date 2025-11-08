@@ -19,6 +19,10 @@ dnf install ublue-brew ublue-os-udev-rules -y
 dnf install ublue-polkit-rules ublue-os-just ublue-os-update-services ublue-setup-services uupd ublue-bling ublue-rebase-helper -y
 dnf copr disable ublue-os/packages -y
 
+dnf copr enable sabbyblue/branding -y
+dnf install fedora-logos -y
+dnf copr disable sabbyblue/branding -y
+
 systemctl enable brew-setup.service
 systemctl disable mcelog.service
 systemctl --global enable podman-auto-update.timer
