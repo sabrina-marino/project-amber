@@ -20,8 +20,7 @@ dnf install ublue-polkit-rules ublue-os-just ublue-os-update-services ublue-setu
 dnf copr disable ublue-os/packages -y
 
 dnf copr enable sabbyblue/amber-branding -y
-dnf remove almalinux-logos -y
-dnf install fedora-logos -y
+dnf swap almalinux-logos fedora-logos -y
 dnf copr disable sabbyblue/amber-branding -y
 
 systemctl enable brew-setup.service
