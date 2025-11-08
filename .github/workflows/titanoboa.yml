@@ -1,5 +1,5 @@
-- name: Titanoboa
-  id: titanoboa
+- name: Build ISO
+  id: build
   uses: ublue-os/titanoboa@main
   with:
     image-ref: ghcr.io/sabrina-marino/project-amber
