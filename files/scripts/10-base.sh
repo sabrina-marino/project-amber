@@ -10,7 +10,7 @@ set -xeuo pipefail
 
 dnf copr enable sabbyblue/amber-branding -y
 dnf remove almalinux-backgrounds -y
-dnf swap almalinux-logos fedora-logos --nobest -y
+dnf swap almalinux-logos amber-logos --nobest -y
 dnf copr disable sabbyblue/amber-branding -y
 
 
