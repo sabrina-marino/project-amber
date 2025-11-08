@@ -2,10 +2,6 @@
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
 
-# COPY branding/almalinux-logos /usr/share
-# COPY branding/pixmaps /usr/share/anaconda
-# COPY branding/backgrounds/almalinux-day.jpg /usr/share/backgrounds
-# COPY branding/backgrounds/almalinux-night.jpg /usr/share/backgrounds
 COPY files/system /system_files/
 COPY files/scripts /build_files/
 COPY *.pub /keys/
