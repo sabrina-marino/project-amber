@@ -25,7 +25,7 @@ jobs:
         uses: ublue-os/titanoboa@main
         with:
           image-ref: ghcr.io/sabrina-marino/project-amber
-          flatpaks-list: ${{ github.workspace }}/iso/flatpaks.list
+          flatpaks-list: ${{ github.workspace }}/iso/flatpaks.txt
           hook-post-rootfs: ${{ github.workspace }}/iso/anaconda.sh
           compression: squashfs
           builder-distro: almalinux
