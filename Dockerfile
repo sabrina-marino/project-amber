@@ -2,7 +2,7 @@
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
 
-COPY files/system /system_files/
+COPY files/system /
 COPY files/scripts /build_files/
 COPY *.pub /keys/
 

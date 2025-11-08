@@ -8,15 +8,15 @@ set -xeuo pipefail
 # dnf install -y 'dnf-command(config-manager)'
 # dnf config-manager --set-enabled crb
 
-cp /system-files/usr/share/branding/fedora-logo.svg /usr/share/almalinux-logos
-cp /system-files/usr/share/branding/fedora-logo-lightbackground.svg /usr/share/almalinux-logos
-cp /system-files/usr/share/branding/fedora-logo-darkbackground.svg /usr/share/almalinux-logos
+cp /usr/share/branding/fedora-logo.svg /usr/share/almalinux-logos
+cp /usr/share/branding/fedora-logo-lightbackground.svg /usr/share/almalinux-logos
+cp /usr/share/branding/fedora-logo-darkbackground.svg /usr/share/almalinux-logos
 
-cp /system-files/usr/share/branding/sidebar-bg.png /usr/share/anaconda/pixmaps
-cp /system-files/usr/share/branding/sidebar-logo.png /usr/share/anaconda/pixmaps
-cp /system-files/usr/share/branding/topbar-bg.png /usr/share/anaconda/pixmaps
-cp /system-files/usr/share/branding/almalinux-day.jpg /usr/share/backgrounds
-cp /system-files/usr/share/branding/almalinux-night.jpg /usr/share/backgrounds
+cp /usr/share/branding/sidebar-bg.png /usr/share/anaconda/pixmaps
+cp /usr/share/branding/sidebar-logo.png /usr/share/anaconda/pixmaps
+cp /usr/share/branding/topbar-bg.png /usr/share/anaconda/pixmaps
+cp /usr/share/branding/almalinux-day.jpg /usr/share/backgrounds
+cp /usr/share/branding/almalinux-night.jpg /usr/share/backgrounds
 
 dnf install distrobox fastfetch git restic buildah fzf fpaste glow gum hplip ntfs-3g ptyxis -y
 dnf install gwenview kweather kate kcalc kontact okular skanpage -y # haruna
