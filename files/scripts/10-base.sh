@@ -9,7 +9,7 @@ set -xeuo pipefail
 # dnf config-manager --set-enabled crb
 
 dnf copr enable sabbyblue/amber-branding -y
-dnf remove almalinux-backgrounds -y
+# dnf remove almalinux-backgrounds -y
 dnf swap almalinux-logos amber-logos --nobest -y
 dnf copr disable sabbyblue/amber-branding -y
 
