@@ -28,7 +28,7 @@ jobs:
           flatpaks-list: ${{ github.workspace }}/iso/flatpaks.txt
           hook-post-rootfs: ${{ github.workspace }}/iso/anaconda.sh
           compression: squashfs
-          builder-distro: almalinux
+          builder-distro: centos
           
       - name: Rename ISO
         run: |
