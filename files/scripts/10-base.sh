@@ -9,7 +9,7 @@ set -xeuo pipefail
 # dnf config-manager --set-enabled crb
 
 
-# rsync -rvK /ctx/system_files/ /
+rsync -a /ctx/system_files/ /
 
 
 
